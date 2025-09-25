@@ -16,6 +16,28 @@
     </style>
 </head>
 <body>
+    <body>
+    <h1 style="display: inline-block;">NBA Draft Manager</h1>
+
+    <!-- Top Right Image -->
+    <img src="{{ asset('images/Steph_Curry_P20230117AS-1347_(cropped).png') }}"
+    alt="NBA Logo">
+
+    {{-- Success Message --}}
+    @if(session('success'))
+        <p class="success">{{ session('success') }}</p>
+        <style>
+    .top-right-logo {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 80px;   /* adjust size */
+        height: auto;
+    }
+</style>
+
+    @endif
+
     <h1>NBA Draft Manager</h1>
 
     {{-- Success Message --}}
